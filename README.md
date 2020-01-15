@@ -1,1 +1,1 @@
-# spinner
+# spin
