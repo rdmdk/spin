@@ -48,153 +48,41 @@ span {
 	bottom: 100%;
 }
 
-.a span {
-	background: #f44336
-}
+.a span {background: #f44336}
+.b span {background: #E91E63}
+.c span {background: #9C27B0}
+.d span {background: #673AB7}
+.e span {background: #3F51B5}
+.f span {background: #2196F3}
+.g span {background: #03A9F4}
+.h span {background: #00BCD4}
+.i span {background: #009688}
+.j span {background: #4CAF50}
+.k span {background: #8BC34A}
+.l span {background: #CDDC39}
+.m span {background: #FFEB3B}
+.n span {background: #FFC107}
+.o span {background: #FF9800}
+.p span {background: #FF5722}
 
-.b span {
-	background: #E91E63
-}
+div span:hover {opacity: 0.9}
 
-.c span {
-	background: #9C27B0
-}
-
-.d span {
-	background: #673AB7
-}
-
-.e span {
-	background: #3F51B5
-}
-
-.f span {
-	background: #2196F3
-}
-
-.g span {
-	background: #03A9F4
-}
-
-.h span {
-	background: #00BCD4
-}
-
-.i span {
-	background: #009688
-}
-
-.j span {
-	background: #4CAF50
-}
-
-.k span {
-	background: #8BC34A
-}
-
-.l span {
-	background: #CDDC39
-}
-
-.m span {
-	background: #FFEB3B
-}
-
-.n span {
-	background: #FFC107
-}
-
-.o span {
-	background: #FF9800
-}
-
-.p span {
-	background: #FF5722
-}
-
-div span:hover {
-	opacity: 0.9;
-}
-
-.a .winner,
-.a~button {
-	background: #009688
-}
-
-.b .winner,
-.b~button {
-	background: #4CAF50
-}
-
-.c .winner,
-.c~button {
-	background: #8BC34A
-}
-
-.d .winner,
-.d~button {
-	background: #CDDC39
-}
-
-.e .winner,
-.e~button {
-	background: #FFEB3B
-}
-
-.f .winner,
-.f~button {
-	background: #FFC107
-}
-
-.g .winner,
-.g~button {
-	background: #FF9800
-}
-
-.h .winner,
-.h~button {
-	background: #FF5722
-}
-
-.i .winner,
-.i~button {
-	background: #f44336
-}
-
-.j .winner,
-.j~button {
-	background: #E91E63
-}
-
-.k .winner,
-.k~button {
-	background: #9C27B0
-}
-
-.l .winner,
-.l~button {
-	background: #673AB7
-}
-
-.m .winner,
-.m~button {
-	background: #3F51B5
-}
-
-.n .winner,
-.n~button {
-	background: #2196F3
-}
-
-.o .winner,
-.o~button {
-	background: #03A9F4
-}
-
-.p .winner,
-.p~button {
-	background: #00BCD4
-}
+.a .winner, .a ~ button {background: #009688}
+.b .winner, .b ~ button {background: #4CAF50}
+.c .winner, .c ~ button {background: #8BC34A}
+.d .winner, .d ~ button {background: #CDDC39}
+.e .winner, .e ~ button {background: #FFEB3B}
+.f .winner, .f ~ button {background: #FFC107}
+.g .winner, .g ~ button {background: #FF9800}
+.h .winner, .h ~ button {background: #FF5722}
+.i .winner, .i ~ button {background: #f44336}
+.j .winner, .j ~ button {background: #E91E63}
+.k .winner, .k ~ button {background: #9C27B0}
+.l .winner, .l ~ button {background: #673AB7}
+.m .winner, .m ~ button {background: #3F51B5}
+.n .winner, .n ~ button {background: #2196F3}
+.o .winner, .o ~ button {background: #03A9F4}
+.p .winner, .p ~ button {background: #00BCD4}
 
 button {
 	font-size: 2.5rem;
@@ -215,42 +103,26 @@ button {
 	left: 50%;
 }
 
-button:hover {
-	opacity: 0.9;
-}
+button:hover {opacity: 0.9}
 
-.spin~button {
+.spin ~ button {
 	border-radius: 0 100% 100%;
 	pointer-events: none;
 }
 
-.spin~button span {
-	opacity: 0;
-}
+.spin ~ button span {opacity: 0}
 
 @keyframes spin {
-	0% {
-		transform: translate(-50%, -50%) rotate(0deg);
-	}
-	10% {
-		color: transparent;
-	}
-	70% {
-		color: white;
-	}
-	100% {
-		transform: translate(-50%, -50%) rotate(-3600deg);
-	}
+	0% {transform: translate(-50%, -50%) rotate(0deg)}
+	10% {color: transparent}
+	70% {color: white}
+	100% {transform: translate(-50%, -50%) rotate(-3600deg)}
 }
 
 @media (orientation:landscape) {
-	html {
-		font-size: 4vh;
-	}
+	html {font-size: 4vh}
 }
 
 @media (orientation:portrait) {
-	html {
-		font-size: 4vw;
-	}
+	html {font-size: 4vw}
 }
