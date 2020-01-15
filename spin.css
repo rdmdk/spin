@@ -1,0 +1,256 @@
+*{font-size:1em;line-height:1em;text-decoration:none;margin:0;padding:0;box-sizing:border-box}h1,h2,h3,h4,h5,h6{font-weight:normal}ol,ul,li{list-style-type:none}table{border-collapse:collapse}
+
+body {
+	overflow: hidden;
+	user-select: none;
+}
+
+section {
+	font-size: 1rem;
+	color: white;
+	width: 7em;
+	height: 7em;
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.spin {
+	animation: spin 20s forwards cubic-bezier(0.05, 0, 0.25, 1);
+	pointer-events: none;
+}
+
+div {
+	width: 1em;
+	height: 100%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+span {
+	text-align: center;
+	line-height: 2.5em;
+	color: inherit;
+	width: 2.5em;
+	height: 2.5em;
+	display: block;
+	border-radius: 100%;
+	will-change: filter;
+	cursor: pointer;
+	transition: background 0.6s ease-in-out;
+	transform: translate(-50%, -100%);
+	position: absolute;
+	left: 50%;
+	bottom: 100%;
+}
+
+.a span {
+	background: #f44336
+}
+
+.b span {
+	background: #E91E63
+}
+
+.c span {
+	background: #9C27B0
+}
+
+.d span {
+	background: #673AB7
+}
+
+.e span {
+	background: #3F51B5
+}
+
+.f span {
+	background: #2196F3
+}
+
+.g span {
+	background: #03A9F4
+}
+
+.h span {
+	background: #00BCD4
+}
+
+.i span {
+	background: #009688
+}
+
+.j span {
+	background: #4CAF50
+}
+
+.k span {
+	background: #8BC34A
+}
+
+.l span {
+	background: #CDDC39
+}
+
+.m span {
+	background: #FFEB3B
+}
+
+.n span {
+	background: #FFC107
+}
+
+.o span {
+	background: #FF9800
+}
+
+.p span {
+	background: #FF5722
+}
+
+div span:hover {
+	opacity: 0.9;
+}
+
+.a .winner,
+.a~button {
+	background: #009688
+}
+
+.b .winner,
+.b~button {
+	background: #4CAF50
+}
+
+.c .winner,
+.c~button {
+	background: #8BC34A
+}
+
+.d .winner,
+.d~button {
+	background: #CDDC39
+}
+
+.e .winner,
+.e~button {
+	background: #FFEB3B
+}
+
+.f .winner,
+.f~button {
+	background: #FFC107
+}
+
+.g .winner,
+.g~button {
+	background: #FF9800
+}
+
+.h .winner,
+.h~button {
+	background: #FF5722
+}
+
+.i .winner,
+.i~button {
+	background: #f44336
+}
+
+.j .winner,
+.j~button {
+	background: #E91E63
+}
+
+.k .winner,
+.k~button {
+	background: #9C27B0
+}
+
+.l .winner,
+.l~button {
+	background: #673AB7
+}
+
+.m .winner,
+.m~button {
+	background: #3F51B5
+}
+
+.n .winner,
+.n~button {
+	background: #2196F3
+}
+
+.o .winner,
+.o~button {
+	background: #03A9F4
+}
+
+.p .winner,
+.p~button {
+	background: #00BCD4
+}
+
+button {
+	font-size: 2.5rem;
+	line-height: 0;
+	text-align: center;
+	color: #fff;
+	width: 2.75em;
+	height: 2.75em;
+	border: none;
+	cursor: pointer;
+	border-radius: 100%;
+	outline: none;
+	opacity: 1;
+	transition: border-radius 0.4s linear;
+	transform: translate(-50%, -50%) rotate(45deg);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+
+button:hover {
+	opacity: 0.9;
+}
+
+.spin~button {
+	border-radius: 0 100% 100%;
+	pointer-events: none;
+}
+
+.spin~button span {
+	opacity: 0;
+}
+
+@keyframes spin {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	10% {
+		color: transparent;
+	}
+	70% {
+		color: white;
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(-3600deg);
+	}
+}
+
+@media (orientation:landscape) {
+	html {
+		font-size: 4vh;
+	}
+}
+
+@media (orientation:portrait) {
+	html {
+		font-size: 4vw;
+	}
+}
