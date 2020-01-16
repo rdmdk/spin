@@ -14,7 +14,7 @@ function spacing() {
 	var l = list.length;
 	var range = 0.5 - 0.05;
 	var s;
-	s = "main{font-size:" + f1 + "rem}span{font-size:" + range/l + "em}";
+	s = "span{font-size:" + range/l + "em}";
 	if (document.head.querySelector("style")) document.head.querySelector("style").innerText = s;
 	else document.head.insertAdjacentHTML("beforeend", "<style>" + s + "</style>");
 }
