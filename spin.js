@@ -62,7 +62,7 @@ function shifting(a) {
 }
 
 function go() {
-	var t = section.querySelector(".winner") ? 12e3 : 10e3;
+	var t = section.querySelector(".winner") ? 17e3 : 15e3;
 	if (section.querySelector(".winner")) section.querySelector(".winner").classList.remove("winner");
 	section.classList.add("spin");
 	button.classList.add("marker");
