@@ -12,7 +12,7 @@ list.sort(() => Math.random() - 0.5);
 
 function spacing() {
 	var l = list.length;
-	main.setAttribute("data-scale", Math.ceil(l * 5 / 5) / 10);
+	main.setAttribute("data-scale", Math.ceil((l/5) * 5) / 10);
 }
 
 function update() {
