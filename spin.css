@@ -40,11 +40,12 @@ section div {
 }
 
 span {
+	font-size: 0.1em;
+	line-height: 1em;
 	text-align: center;
-	line-height: 2.25em;
 	color: inherit;
-	width: 2.5em;
-	height: 2.5em;
+	width: 1em;
+	height: 1em;
 	display: block;
 	border-radius: 100%;
 	will-change: filter;
@@ -55,11 +56,6 @@ span {
 	left: 50%;
 	bottom: 100%;
 }
-
-body[data-scale='20'] span {transform:translate(-50%, -150%)}
-body[data-scale='25'] span {transform:translate(-50%, -250%)}
-body[data-scale='30'] span {transform:translate(-50%, -350%)}
-body[data-scale='35'] span {transform:translate(-50%, -450%)}
 
 .a span {background: #f44336}
 .b span {background: #E91E63}
