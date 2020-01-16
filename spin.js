@@ -62,7 +62,6 @@ function shifting(a) {
 }
 
 function go() {
-	var t = section.querySelector(".winner") ? 17e3 : 15e3;
 	if (section.querySelector(".winner")) section.querySelector(".winner").classList.remove("winner");
 	section.classList.add("spin");
 	button.classList.add("marker");
@@ -71,7 +70,7 @@ function go() {
 		section.querySelector("div span").className = "winner";
 		section.classList.remove("spin");
 		setTimeout(() => button.classList.remove("marker"), 2e3);
-	}, t);
+	}, 15e3);
 }
 
 spacing();
