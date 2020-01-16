@@ -44,6 +44,7 @@ function setup() {
 	list.forEach((a, i) => {
 		section.insertAdjacentHTML("beforeend", "<div style='transform:translate(-50%, -50%) rotate(" + ((360 / list.length) * i).toFixed(1) + "deg)'><span title='Take me out'>" + a + "</span></div");
 	});
+	spacing();
 	section.querySelectorAll("span").forEach((s) => {
 		s.addEventListener("click", () => {
 			list.splice(list.indexOf(s.innerText), 1);
