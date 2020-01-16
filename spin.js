@@ -89,8 +89,8 @@ button.addEventListener("click", () => {
 });
 
 var c = Math.floor(Math.random() * colors.length);
-section.className = colors[c];
-edit.className = colors[c];
+section.classList.add(colors[c]);
+edit.classList.add(colors[c]);
 
 edit.addEventListener("click", () => {
 	update();
