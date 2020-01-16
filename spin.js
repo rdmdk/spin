@@ -13,9 +13,10 @@ list.sort(() => Math.random() - 0.5);
 function spacing() {
 	var l = list.length;
 	var f1, f2;
-	if (l >= 35) f1 = 14, f2 = 0.1;
+	if (l >= 40) f1 = 15, f2 = 0.1;
+	else if (l >= 35) f1 = 14, f2 = 0.15;
 	else if (l >= 30) f1 = 13, f2 = 0.2; 
-	else if (l >= 25) f1 = 12, f2 = 0.3; 
+	else if (l >= 25) f1 = 12, f2 = 0.25; 
 	else if (l >= 20) f1 = 11, f2 = 0.3; 
 	else if (l >= 15) f1 = 9.5, f2 = 0.5; 
 	else if (l >= 10) f1 = 9, f2 = 0.6; 
