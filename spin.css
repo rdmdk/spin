@@ -39,12 +39,12 @@ section div {
 }
 
 span {
-	font-size: 0.1em;
-	line-height: 1em;
+	font-size: 0.25em;
+	line-height: 2.5em;
 	text-align: center;
 	color: inherit;
-	width: 1em;
-	height: 1em;
+	width: 2.5em;
+	height: 2.5em;
 	display: block;
 	border-radius: 100%;
 	will-change: filter;
