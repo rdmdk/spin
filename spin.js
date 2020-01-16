@@ -9,7 +9,7 @@ else update();
 list = list.split(",");
 list.sort(() => Math.random() - 0.5);
 
-section.setAttribute("data-max", Math.round(list.length / 5) * 5);
+section.setAttribute("data-max", Math.ceil(list.length / 5) * 5);
 
 function update() {
 	var input = window.prompt("Enter a comma-delimmited list of initials", localStorage.list);
