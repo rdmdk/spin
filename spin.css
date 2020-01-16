@@ -139,7 +139,7 @@ button:hover {opacity: 0.9}
 	0% {transform: translate(-50%, -50%) rotate(0deg)}
 	25% {color: rgba(255, 255, 255, 0.25)}
 	75% {color: rgba(255, 255, 255, 1)}
-	100% {transform: translate(-50%, -50%) rotate(-3600deg)}
+	100% {transform: translate(-50%, -50%) rotate(-1880deg)}
 }
 
 @media (orientation:landscape) {
