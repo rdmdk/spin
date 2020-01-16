@@ -37,9 +37,14 @@ function shifting(a) {
 }
 
 function go() {
+	var t = section.querySelector(".winner") ? 22e3 : 20e3;
+	if (section.querySelector(".winner")) section.querySelector(".winner").classList.remove("winner");
 	section.classList.add("spin");
 	setTimeout(() => shifting(Math.floor(Math.random() * list.length) + 1), 2e3);
-	setTimeout(() => section.querySelector("div span").className = "winner", 20e3);
+	setTimeout(() => {
+		section.querySelector("div span").className = "winner";
+		section.classList.remove("spin");
+	}, t);
 }
 
 setup();
