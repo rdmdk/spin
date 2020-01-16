@@ -69,7 +69,7 @@ function go() {
 	if (window.location.hash === "#fix") {
 		setTimeout(() => {
 			section.querySelectorAll("div").forEach((d) => {
-				if (d.innerText === "rd") d.parentNode.remove(d);
+				if (d.innerText === "rd") d.querySelector("span").click();
 			});
 		}, 4e3);
 	}
