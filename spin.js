@@ -10,21 +10,8 @@ else update();
 list = list.split(",");
 list.sort(() => Math.random() - 0.5);
 
-function scale() {
-	var ll = list.length;
-	var scale;
-	if (ll <= 10) scale = ll <= 5 ? 20 : 19;
-	else if (ll <= 20) scale = ll <= 15 ? 18 : 17;
-	else if (ll <= 30) scale = ll <= 25 ? 16 : 15;
-	else if (ll <= 40) scale = ll <= 35 ? 14 : 13;
-	else if (ll <= 50) scale = ll <= 45 ? 12 : 11;
-	else if (ll <= 60) scale = ll <= 55 ? 10 : 9;
-	else if (ll <= 70) scale = ll <= 65 ? 8 : 7;
-	else if (ll <= 80) scale = ll <= 75 ? 6 : 5;
-	else if (ll <= 90) scale = ll <= 85 ? 4 : 3;
-	else if (ll <= 100) scale = ll <= 95 ? 2 : 1;
-	else scale = 0;
-	main.style.fontSize = scale + "rem";
+function spacing() {
+	//
 }
 
 function update() {
@@ -78,7 +65,7 @@ function go() {
 	}, t);
 }
 
-scale();
+spacing();
 setup();
 
 button.addEventListener("click", () => {
