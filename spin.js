@@ -1,9 +1,15 @@
 var button = document.querySelector("button");
 var section = document.querySelector("section");
+var edit = document.querySelector("section");
 var colors = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p"];
 var list;
 if (localStorage.list) list = localStorage.list;
-else {
+else edit();
+
+list = list.split(",");
+list.sort(() => Math.random() - 0.5);
+
+function edit() {
 	var input = window.prompt("Enter a comma-delimmited list of initials");
 	if (input !== null && input !== localStorage.list) {
 		if (input === "ci") list = "da,alg,sw,jl,sl,ac,li,dl,mt,vz,mf,ba,on,rd";
@@ -11,9 +17,6 @@ else {
 		localStorage.list = list;
 	}
 }
-
-list = list.split(",");
-list.sort(() => Math.random() - 0.5);
 
 function setup() {
 	section.innerHTML = "";
@@ -57,3 +60,8 @@ button.addEventListener("click", () => {
 });
 
 section.className = colors[Math.floor(Math.random() * colors.length)];
+
+edit.addEventListener("click", () => {
+	edit();
+	window.location.reload();
+});
