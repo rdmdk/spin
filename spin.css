@@ -49,6 +49,25 @@ span {
 	bottom: 100%;
 }
 
+section[data-max='20'] span {transform:translate(-50%, -150%)}
+section[data-max='25'] span {transform:translate(-50%, -250%)}
+section[data-max='30'] span {transform:translate(-50%, -350%)}
+section[data-max='35'] span {transform:translate(-50%, -450%)}
+section[data-max='40'] span {transform:translate(-50%, -550%)}
+section[data-max='45'] span {transform:translate(-50%, -650%)}
+section[data-max='50'] span {transform:translate(-50%, -750%)}
+section[data-max='55'] span {transform:translate(-50%, -850%)}
+section[data-max='60'] span {transform:translate(-50%, -950%)}
+section[data-max='65'] span {transform:translate(-50%, -1050%)}
+section[data-max='70'] span {transform:translate(-50%, -1150%)}
+section[data-max='75'] span {transform:translate(-50%, -1250%)}
+section[data-max='80'] span {transform:translate(-50%, -1350%)}
+section[data-max='85'] span {transform:translate(-50%, -1450%)}
+section[data-max='90'] span {transform:translate(-50%, -1550%)}
+section[data-max='95'] span {transform:translate(-50%, -1650%)}
+section[data-max='100'] span {transform:translate(-50%, -1750%)}
+section[data-max='105'] span {display: none}
+
 .a span {background: #f44336}
 .b span {background: #E91E63}
 .c span {background: #9C27B0}
