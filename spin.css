@@ -6,14 +6,21 @@ body {
 	user-select: none;
 }
 
-section {
-	font-size: 1rem;
-	color: white;
+main {
 	width: 7em;
 	height: 7em;
-	border-radius: 100%;
 	transform: translate(-50%, -50%);
 	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+section {
+	color: white;
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	transform: translate(-50%, -50%);
+	position: absolute;
 	top: 50%;
 	left: 50%;
 }
@@ -104,7 +111,7 @@ button {
 	opacity: 1;
 	transition: border-radius 0.4s linear;
 	transform: translate(-50%, -50%) rotate(45deg);
-	position: fixed;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 }
