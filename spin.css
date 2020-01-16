@@ -7,7 +7,7 @@ body {
 }
 
 main {
-	font-size: 11rem;
+	font-size: 10rem;
 	width: 5em;
 	height: 5em;
 	transform: translate(-50%, -50%);
@@ -41,7 +41,7 @@ section div {
 }
 
 span {
-	font-size: 0.25em;
+	font-size: 0.5em;
 	line-height: 2.5em;
 	text-align: center;
 	color: inherit;
@@ -52,7 +52,7 @@ span {
 	will-change: filter;
 	cursor: pointer;
 	transition: background 0.6s ease-in-out;
-	transform: translate(-50%, -100%);
+	transform: translate(-50%, -50%);
 	position: absolute;
 	left: 50%;
 	bottom: 100%;
