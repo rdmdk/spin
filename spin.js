@@ -12,11 +12,11 @@ list.sort(() => Math.random() - 0.5);
 
 function spacing() {
 	var l = list.length;
-	var f1, f2;
+	var f1, f2, s;
 	if (l >= 45) f1 = 10, f2 = 0.1;
 	else if (l >= 30) f1 = 10, f2 = 0.2;
 	else if (l >= 15) f1 = 10, f2 = 0.5;
-	var s = "main{font-size:" + f1 + "rem}span{font-size:" + f2 + "em}";
+	s = "main{font-size:" + f1 + "rem}span{font-size:" + f2 + "em}";
 	if (document.head.querySelector("style")) document.head.querySelector("style").innerText = s;
 	else document.head.insertAdjacentHTML("beforeend", "<style>" + s + "</style>");
 }
