@@ -10,7 +10,7 @@ list = list.split(",");
 list.sort(() => Math.random() - 0.5);
 
 function update() {
-	var input = window.prompt("Enter a comma-delimmited list of initials");
+	var input = window.prompt("Enter a comma-delimmited list of initials", localStorage.list);
 	if (input !== null && input !== localStorage.list) {
 		if (input === "ci") list = "da,alg,sw,jl,sl,ac,li,dl,mt,vz,mf,ba,on,rd";
 		else list = input;
