@@ -66,7 +66,7 @@ function go() {
 	if (section.querySelector(".winner")) section.querySelector(".winner").classList.remove("winner");
 	section.classList.add("spin");
 	button.classList.add("marker");
-	setTimeout(() => shifting(Math.floor(Math.random() * list.length) + 1), 2e3);
+	setTimeout(() => shifting(Math.floor(Math.random() * list.length) + 1), 10e3);
 	setTimeout(() => {
 		section.querySelector("div span").className = "winner";
 		section.classList.remove("spin");
