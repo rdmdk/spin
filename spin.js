@@ -20,7 +20,7 @@ function spacing() {
 	else if (l >= 15) f1 = 11, f2 = 0.25; 
 	else if (l >= 10) f1 = 10, f2 = 0.3; 
 	else if (l >= 5) f1 = 9, f2 = 0.35; 
-	var s = "main{font-size:" + f1 + "rem}span{font-size:" + f2 + "rem}";
+	var s = "main{font-size:" + f1 + "rem}span{font-size:" + f2 + "em}";
 	if (document.head.querySelector("style")) document.head.querySelector("style").innerText = s;
 	else document.head.insertAdjacentHTML("beforeend", "<style>" + s + "</style>");
 }
