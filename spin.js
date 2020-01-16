@@ -13,14 +13,14 @@ function update() {
 	var input = window.prompt("Enter a comma-delimmited list of initials", localStorage.list);
 	if (input !== null && input !== localStorage.list) {
 		if (input.match(/^[0-9]+$/gm)) {
-			list = "";
 			var n = parseInt(input);
+			list = "";
 		    	for (var i = 1; i <= n; i++) {
 				list += i + ",";
 			}
 		} else if (input === "abc") list = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
 		else if (input === "ci") list = "ac,alg,ba,da,dl,jl,li,mf,mt,on,rd,sl,sw,vz";
-		else list = input;
+		else list = input.replace(/^\,|\,$/gm, "").replace(/\,+/gm, ",");
 		localStorage.list = list;
 	}
 }
