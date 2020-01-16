@@ -129,22 +129,22 @@ button:hover {opacity: 0.9}
 	right: 1em;
 }
 
-.a ~ .edit {color: #009688}
-.b ~ .edit {color: #4CAF50}
-.c ~ .edit {color: #8BC34A}
-.d ~ .edit {color: #CDDC39}
-.e ~ .edit {color: #FFEB3B}
-.f ~ .edit {color: #FFC107}
-.g ~ .edit {color: #FF9800}
-.h ~ .edit {color: #FF5722}
-.i ~ .edit {color: #f44336}
-.j ~ .edit {color: #E91E63}
-.k ~ .edit {color: #9C27B0}
-.l ~ .edit {color: #673AB7}
-.m ~ .edit {color: #3F51B5}
-.n ~ .edit {color: #2196F3}
-.o ~ .edit {color: #03A9F4}
-.p ~ .edit {color: #00BCD4}
+.edit.a {color: #009688}
+.edit.b {color: #4CAF50}
+.edit.c {color: #8BC34A}
+.edit.d {color: #CDDC39}
+.edit.e {color: #FFEB3B}
+.edit.f {color: #FFC107}
+.edit.g {color: #FF9800}
+.edit.h {color: #FF5722}
+.edit.i {color: #f44336}
+.edit.j {color: #E91E63}
+.edit.k {color: #9C27B0}
+.edit.l {color: #673AB7}
+.edit.m {color: #3F51B5}
+.edit.n {color: #2196F3}
+.edit.o {color: #03A9F4}
+.edit.p {color: #00BCD4}
 
 .spin ~ .edit {
 	opacity: 0;
