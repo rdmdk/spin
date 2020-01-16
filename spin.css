@@ -137,8 +137,8 @@ button:hover {opacity: 0.9}
 
 @keyframes spin {
 	0% {transform: translate(-50%, -50%) rotate(0deg)}
-	10% {color: transparent}
-	70% {color: white}
+	25% {color: transparent}
+	75% {color: white}
 	100% {transform: translate(-50%, -50%) rotate(-3600deg)}
 }
 
