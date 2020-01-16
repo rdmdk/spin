@@ -12,7 +12,9 @@ list.sort(() => Math.random() - 0.5);
 
 function spacing() {
 	var l = list.length;
-	main.setAttribute("data-scale", Math.ceil((l/5) * 5) / 10);
+	var s = "span {font-size:calc(0.5em * " + Math.ceil((l/5) * 5) / 10 + ")}";
+	if (document.head.querySelector("style")) document.head.querySelector("style").innerText = s;
+	else document.head.insertAdjacentHTML("beforeend", "<style>" + s + "</style>");
 }
 
 function update() {
@@ -29,6 +31,7 @@ function update() {
 		else list = input;
 		list = list.replace(/^\,|\,$/gm, "").replace(/\,+/gm, ",");
 		localStorage.list = list;
+		spacing();
 	}
 }
 
