@@ -20,7 +20,8 @@ function update() {
 			}
 		} else if (input === "abc") list = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
 		else if (input === "ci") list = "ac,alg,ba,da,dl,jl,li,mf,mt,on,rd,sl,sw,vz";
-		else list = input.replace(/^\,|\,$/gm, "").replace(/\,+/gm, ",");
+		else list = input;
+		list = list.replace(/^\,|\,$/gm, "").replace(/\,+/gm, ",");
 		localStorage.list = list;
 	}
 }
