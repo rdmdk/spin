@@ -146,9 +146,9 @@ button:hover {opacity: 0.9}
 }
 
 @media (orientation:landscape) {
-	html {font-size: 4vh}
+	html {font-size: 1vh}
 }
 
 @media (orientation:portrait) {
-	html {font-size: 4vw}
+	html {font-size: 1vw}
 }
