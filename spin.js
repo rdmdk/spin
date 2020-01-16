@@ -11,10 +11,9 @@ list = list.split(",");
 list.sort(() => Math.random() - 0.5);
 
 function spacing() {
+	/*
 	var l = list.length;
-	var s = "span {font-size:calc(0.5em * " + (Math.ceil(l/5) * 5 / 10) + ")}";
-	if (document.head.querySelector("style")) document.head.querySelector("style").innerText = s;
-	else document.head.insertAdjacentHTML("beforeend", "<style>" + s + "</style>");
+	*/
 }
 
 function update() {
