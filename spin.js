@@ -1,6 +1,6 @@
 var button = document.querySelector("button");
 var section = document.querySelector("section");
-var edit = document.querySelector("section");
+var edit = document.querySelector(".edit");
 var colors = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p"];
 var list;
 if (localStorage.list) list = localStorage.list;
