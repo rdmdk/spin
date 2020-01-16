@@ -12,7 +12,7 @@ list.sort(() => Math.random() - 0.5);
 function update() {
 	var input = window.prompt("Enter a comma-delimmited list of initials", localStorage.list);
 	if (input !== null && input !== localStorage.list) {
-		if (input.match(/^[!A-Za-z][0-9]+$/gm)) {
+		if (input.match(/^[0-9]+$/gm)) {
 			var n = parseInt(input);
 		    	for (var i = 1; i <= n; i++) {
 				list += i + ",";
