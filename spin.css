@@ -31,7 +31,6 @@ section {
 }
 
 section div {
-	width: 1em;
 	height: 100%;
 	transform: translate(-50%, -50%);
 	position: absolute;
