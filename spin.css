@@ -94,7 +94,7 @@ div span:hover {opacity: 0.9}
 .p .winner, .p ~ button {background: #00BCD4}
 
 button {
-	font-size: 5em;
+	font-size: 4em;
 	line-height: 0;
 	text-align: center;
 	color: #fff;
