@@ -12,6 +12,8 @@ list.sort(() => Math.random() - 0.5);
 
 function spacing() {
 	var l = list.length;
+	var max = 0.5,
+	min = 0.05;
 	var f1, f2, s;
 	if (l >= 100) f1 = 10, f2 = 0.05;
 	else if (l >= 95) f1 = 10, f2 = 0.06;
