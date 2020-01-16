@@ -13,6 +13,7 @@ function update() {
 	var input = window.prompt("Enter a comma-delimmited list of initials", localStorage.list);
 	if (input !== null && input !== localStorage.list) {
 		if (input.match(/^[0-9]+$/gm)) {
+			list = "";
 			var n = parseInt(input);
 		    	for (var i = 1; i <= n; i++) {
 				list += i + ",";
