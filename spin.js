@@ -12,30 +12,9 @@ list.sort(() => Math.random() - 0.5);
 
 function spacing() {
 	var l = list.length;
-	var max = 0.5,
-	min = 0.05;
-	var f1, f2, s;
-	if (l >= 100) f1 = 10, f2 = 0.05;
-	else if (l >= 95) f1 = 10, f2 = 0.06;
-	else if (l >= 90) f1 = 10, f2 = 0.0625;
-	else if (l >= 85) f1 = 10, f2 = 0.0675;
-	else if (l >= 80) f1 = 10, f2 = 0.07;
-	else if (l >= 75) f1 = 10, f2 = 0.0725;
-	else if (l >= 70) f1 = 10, f2 = 0.075;
-	else if (l >= 65) f1 = 10, f2 = 0.0775;
-	else if (l >= 60) f1 = 10, f2 = 0.085;
-	else if (l >= 55) f1 = 10, f2 = 0.09;
-	else if (l >= 50) f1 = 10, f2 = 0.095;
-	else if (l >= 45) f1 = 10, f2 = 0.1;
-	else if (l >= 40) f1 = 10, f2 = 0.15;
-	else if (l >= 35) f1 = 10, f2 = 0.2;
-	else if (l >= 30) f1 = 10, f2 = 0.25;
-	else if (l >= 25) f1 = 10, f2 = 0.3;
-	else if (l >= 20) f1 = 10, f2 = 0.35;
-	else if (l >= 15) f1 = 10, f2 = 0.4;
-	else if (l >= 10) f1 = 10, f2 = 0.45;
-	else if (l >= 5) f1 = 10, f2 = 0.5;
-	s = "main{font-size:" + f1 + "rem}span{font-size:" + f2 + "em}";
+	var range = 0.5 - 0.05;
+	var s;
+	s = "main{font-size:" + f1 + "rem}span{font-size:" + range/l + "em}";
 	if (document.head.querySelector("style")) document.head.querySelector("style").innerText = s;
 	else document.head.insertAdjacentHTML("beforeend", "<style>" + s + "</style>");
 }
