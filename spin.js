@@ -88,7 +88,9 @@ button.addEventListener("click", () => {
 	else window.location.reload();
 });
 
-section.className = colors[Math.floor(Math.random() * colors.length)];
+var c = Math.floor(Math.random() * colors.length);
+section.className = colors[c];
+edit.className = colors[c];
 
 edit.addEventListener("click", () => {
 	update();
