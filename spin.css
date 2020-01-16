@@ -121,13 +121,13 @@ button:hover {opacity: 0.9}
 }
 
 .edit {
-	font-size: 1rem;
+	font-size: 5rem;
 	color: #ddd;
 	cursor: pointer;
 	transition: opacity 0.6s ease-in-out;
 	position: fixed;
-	bottom: 2rem;
-	right: 2rem;
+	bottom: 1em;
+	right: 1em;
 }
 
 .spin ~ .edit {
