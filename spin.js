@@ -16,8 +16,8 @@ function spacing() {
 	if (l >= 35) f1 = 14, f2 = 0.1;
 	else if (l >= 30) f1 = 13, f2 = 0.2; 
 	else if (l >= 25) f1 = 12, f2 = 0.3; 
-	else if (l >= 20) f1 = 11, f2 = 0.4; 
-	else if (l >= 15) f1 = 10, f2 = 0.5; 
+	else if (l >= 20) f1 = 11, f2 = 0.3; 
+	else if (l >= 15) f1 = 9.5, f2 = 0.5; 
 	else if (l >= 10) f1 = 9, f2 = 0.6; 
 	else if (l >= 5) f1 = 8, f2 = 0.7; 
 	var s = "main{font-size:" + f1 + "rem}span{font-size:" + f2 + "em}";
