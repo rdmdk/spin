@@ -1,5 +1,6 @@
-var button = document.querySelector("button");
+var main = document.querySelector("main");
 var section = document.querySelector("section");
+var button = document.querySelector("button");
 var edit = document.querySelector(".edit");
 var colors = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p"];
 var list;
@@ -9,7 +10,22 @@ else update();
 list = list.split(",");
 list.sort(() => Math.random() - 0.5);
 
-//document.body.setAttribute("data-scale", Math.ceil(list.length / 5) * 5);
+function scale() {
+	var ll = list.length;
+	var scale;
+	if (ll <= 10) scale = ll <= 5 ? 19 : 20;
+	else if (ll <= 20) scale = ll <= 15 ? 17 : 18;
+	else if (ll <= 30) scale = ll <= 25 ? 15 : 16;
+	else if (ll <= 40) scale = ll <= 35 ? 13 : 14;
+	else if (ll <= 50) scale = ll <= 45 ? 11 : 12;
+	else if (ll <= 60) scale = ll <= 55 ? 9 : 10;
+	else if (ll <= 70) scale = ll <= 65 ? 7 : 8;
+	else if (ll <= 80) scale = ll <= 75 ? 5 : 6;
+	else if (ll <= 90) scale = ll <= 85 ? 3 : 4;
+	else if (ll <= 100) scale = ll <= 95 ? 1 : 2;
+	else scale = 0;
+	main.style.fontSize = scale + "rem";
+}
 
 function update() {
 	var input = window.prompt("Enter a comma-delimmited list of initials", localStorage.list);
@@ -62,6 +78,7 @@ function go() {
 	}, t);
 }
 
+scale();
 setup();
 
 button.addEventListener("click", () => {
