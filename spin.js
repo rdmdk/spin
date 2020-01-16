@@ -12,6 +12,7 @@ list.sort(() => Math.random() - 0.5);
 
 function spacing() {
 	var l = list.length;
+	/*
 	var f1, f2;
 	if (l >= 40) f1 = 15, f2 = 0.1;
 	else if (l >= 35) f1 = 14, f2 = 0.15;
@@ -24,6 +25,7 @@ function spacing() {
 	var s = "main{font-size:" + f1 + "rem}span{font-size:" + f2 + "em}";
 	if (document.head.querySelector("style")) document.head.querySelector("style").innerText = s;
 	else document.head.insertAdjacentHTML("beforeend", "<style>" + s + "</style>");
+	*/
 }
 
 function update() {
