@@ -12,7 +12,8 @@ list.sort(() => Math.random() - 0.5);
 
 function spacing() {
 	var l = list.length;
-	var fs = l <= 15 ? 0.5 : l <= 30 ? 0.25 : l <= 45 ? 0.15 : l <= 60 ? 0.1 : l <= 75 ? 0.075 : 0.05;
+	var fs1 = l <= 15 ? 10 : l <= 30 ? 11 : l <= 45 ? 12 : l <= 60 ? 13 : l <= 75 ? 14 : 15;
+	var fs2 = l <= 15 ? 0.5 : l <= 30 ? 0.25 : l <= 45 ? 0.15 : l <= 60 ? 0.1 : l <= 75 ? 0.075 : 0.05;
 	var s = "span{font-size:" + fs + "em}";
 	if (document.head.querySelector("style")) document.head.querySelector("style").innerText = s;
 	else document.head.insertAdjacentHTML("beforeend", "<style>" + s + "</style>");
