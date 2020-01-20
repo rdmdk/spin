@@ -68,7 +68,9 @@ function go() {
 		setTimeout(() => {
 			let hashlist = window.location.hash.replace(/\#/gm, "").split(",");
 			section.querySelectorAll("div").forEach((d) => {
-				if (hashlist.indexOf(d.querySelector("span").innerText) > -1) d.querySelector("span").click();
+				d.parentNode.removeChild(d);
+				d.parentNode.appendChild(d);
+				//if (hashlist.indexOf(d.querySelector("span").innerText) > -1) d.querySelector("span").click();
 			});
 		}, 4e3);
 	}
