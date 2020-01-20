@@ -64,10 +64,11 @@ function go() {
 	section.classList.add("spin");
 	button.classList.add("marker");
 	setTimeout(() => shifting(Math.floor(Math.random() * list.length) + 1), 3e3);
-	if (window.location.hash === "#fix") {
+	if (window.location.hash) {
 		setTimeout(() => {
+			let hashlist = window.location.hash.replace(/\#/gm, "").split(",");
 			section.querySelectorAll("div").forEach((d) => {
-				if (d.innerText === "rd") d.querySelector("span").click();
+				if (hashlist.indexOf(d.querySelector("span").innerText) > -1) d.querySelector("span").click();
 			});
 		}, 4e3);
 	}
