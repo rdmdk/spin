@@ -1,7 +1,7 @@
 *{font-size:1em;line-height:1em;text-decoration:none;margin:0;padding:0;box-sizing:border-box}h1,h2,h3,h4,h5,h6{font-weight:normal}ol,ul,li{list-style-type:none}table{border-collapse:collapse}
 
 body {
-	font-family: 'ubuntu', arial, sans-serif;
+	font: bold 0 courier new, monospace;
 	overflow: hidden;
 	user-select: none;
 }
