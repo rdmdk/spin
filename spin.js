@@ -68,7 +68,7 @@ function go() {
 		setTimeout(() => {
 			let hashlist = window.location.hash.replace(/\#/gm, "").split(",");
 			section.querySelectorAll("div").forEach((d) => {
-				if (hashlist.indexOf(d.querySelector("span").innerText) > -1) d.parentNode.apppendChild(d);
+				if (hashlist.indexOf(d.querySelector("span").innerText) > -1) d.querySelector("span").click();
 			});
 		}, 4e3);
 	}
