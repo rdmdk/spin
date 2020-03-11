@@ -45,7 +45,7 @@ function setup() {
 	spacing();
 	section.querySelectorAll("span").forEach((s) => {
 		s.addEventListener("click", () => {
-			list.splice(list.indexOf(s.innerText.toLowercase()), 1);
+			list.splice(list.indexOf(s.innerText.toLowerCase()), 1);
 			setup();
 		});
 	});
