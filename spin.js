@@ -60,23 +60,25 @@ function shifting(a) {
 }
 
 function go() {
-	if (section.querySelector(".winner")) section.querySelector(".winner").classList.remove("winner");
-	section.classList.add("spin");
-	button.classList.add("marker");
-	setTimeout(() => shifting(Math.floor(Math.random() * list.length) + 1), 3e3);
-	if (window.location.hash) {
+	if (!section.classList.contains("spin")) {
+		if (section.querySelector(".winner")) section.querySelector(".winner").classList.remove("winner");
+		section.classList.add("spin");
+		button.classList.add("marker");
+		setTimeout(() => shifting(Math.floor(Math.random() * list.length) + 1), 3e3);
+		if (window.location.hash) {
+			setTimeout(() => {
+				let hashlist = window.location.hash.replace(/\#/gm, "").split(",");
+				section.querySelectorAll("div").forEach((d) => {
+					if (hashlist.indexOf(d.querySelector("span").innerText.toLowerCase()) > -1) d.querySelector("span").click();
+				});
+			}, 4e3);
+		}
 		setTimeout(() => {
-			let hashlist = window.location.hash.replace(/\#/gm, "").split(",");
-			section.querySelectorAll("div").forEach((d) => {
-				if (hashlist.indexOf(d.querySelector("span").innerText.toLowerCase()) > -1) d.querySelector("span").click();
-			});
-		}, 4e3);
-	}
-	setTimeout(() => {
-		section.querySelector("div span").className = "winner";
-		section.classList.remove("spin");
-		setTimeout(() => button.classList.remove("marker"), 2e3);
-	}, 15e3);
+			section.querySelector("div span").className = "winner";
+			section.classList.remove("spin");
+			setTimeout(() => button.classList.remove("marker"), 2e3);
+		}, 15e3);
+	} else return false;
 }
 
 spacing();
