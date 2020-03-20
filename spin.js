@@ -87,6 +87,10 @@ button.addEventListener("click", () => {
 	else window.location.reload();
 });
 
+window.addEventListener("keyup", (e) => {
+	if ((e.which === 13 || e.keyCode === 13) && document.querySelectorAll("div").length > 1) go();
+});
+
 var c = Math.floor(Math.random() * colors.length);
 section.classList.add(colors[c]);
 edit.classList.add(colors[c]);
