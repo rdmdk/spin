@@ -90,7 +90,7 @@ button.addEventListener("click", () => {
 });
 
 window.addEventListener("keyup", (e) => {
-	if ((e.which || e.keyCode) == (13 || 32)) {
+	if ((e.which || e.keyCode) == 13) || (e.which || e.keyCode) == 32)) {
 		e.preventDefault();
 		if (document.querySelectorAll("div").length > 1) go();
 		go();
