@@ -90,7 +90,11 @@ button.addEventListener("click", () => {
 });
 
 window.addEventListener("keyup", (e) => {
-	if (((e.which || e.keyCode) == (13 || 32)) && document.querySelectorAll("div").length > 1) go();
+	if ((e.which || e.keyCode) == (13 || 32)) {
+		e.preventDefault();
+		if (document.querySelectorAll("div").length > 1) go();
+		go();
+	}
 });
 
 var c = Math.floor(Math.random() * colors.length);
