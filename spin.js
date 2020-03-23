@@ -90,7 +90,7 @@ button.addEventListener("click", () => {
 });
 
 window.addEventListener("keyup", (e) => {
-	if ((e.which === 13 || e.keyCode === 13) && document.querySelectorAll("div").length > 1) go();
+	if (((e.which || e.keyCode) == (13 || 32)) && document.querySelectorAll("div").length > 1) go();
 });
 
 var c = Math.floor(Math.random() * colors.length);
