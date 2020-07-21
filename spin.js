@@ -29,7 +29,7 @@ function update() {
 				list += i + ",";
 			}
 		} else if (input === "abc") list = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
-		else if (input === "ci") list = "ac,b,da,dl,l,mf,mo,mt,o,p,r,sl,v";
+		else if (input === "ci") list = "ac,ba,da,dl,li,mo,mt,on,pw,rd,rs,sp,vz";
 		else list = input;
 		list = list.replace(/^\,|\,$/gm, "").replace(/\,+/gm, ",");
 		localStorage.list = list;
