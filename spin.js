@@ -20,7 +20,7 @@ function spacing() {
 }
 
 function update() {
-	var input = window.prompt("Enter a comma-delimmited list of initials", localStorage.list);
+	var input = window.prompt("Enter a comma-delimited list of initials", localStorage.list);
 	if (input !== null && input !== localStorage.list) {
 		if (input.match(/^[0-9]+$/gm)) {
 			var n = parseInt(input);
