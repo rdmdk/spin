@@ -30,7 +30,7 @@ function update() {
 			}
 		} else if (input === "abc") list = "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z";
 		else if (input === "ci") list = "ac,ba,bc,jp,li,mf,mo,mt,on,pw,rd,vz";
-		else if (input === "release") lit = "ba,jp,mf,mo,on,pw";
+		else if (input === "release") list = "ba,jp,mf,mo,on,pw";
 		else list = input;
 		list = list.replace(/^\,|\,$/gm, "").replace(/\,+/gm, ",");
 		localStorage.list = list;
