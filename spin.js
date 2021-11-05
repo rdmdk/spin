@@ -6,6 +6,7 @@ var mode = document.querySelector('.mode');
 var colors = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'];
 var list;
 if (localStorage.list) list = localStorage.list;
+if (localStroage.mode) section.classList.add(localStorage.mode);
 else update();
 
 list = list.split(',');
@@ -108,5 +109,8 @@ edit.addEventListener('click', () => {
 });
 
 mode.addEventListener('click', () => {
-	section.classList.toggle('names');
+	var c = 'names';
+	section.classList.toggle(c);
+	if (section.classList.contains(c)) localStorage.mode = c;
+	else localStorage.removeItem('mode');
 });
