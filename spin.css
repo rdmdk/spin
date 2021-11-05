@@ -76,6 +76,8 @@ span {
 .o span {background: #FF9800}
 .p span {background: #FF5722}
 
+.names span {background: none}
+
 div span:hover {opacity: 0.9}
 
 .a .winner, .a ~ button {background: #009688}
@@ -94,6 +96,23 @@ div span:hover {opacity: 0.9}
 .n .winner, .n ~ button {background: #2196F3}
 .o .winner, .o ~ button {background: #03A9F4}
 .p .winner, .p ~ button {background: #00BCD4}
+
+.a.names .winner {color: #009688}
+.b.names .winner {color: #4CAF50}
+.c.names .winner {color: #8BC34A}
+.d.names .winner {color: #CDDC39}
+.e.names .winner {color: #FFEB3B}
+.f.names .winner {color: #FFC107}
+.g.names .winner {color: #FF9800}
+.h.names .winner {color: #FF5722}
+.i.names .winner {color: #f44336}
+.j.names .winner {color: #E91E63}
+.k.names .winner {color: #9C27B0}
+.l.names .winner {color: #673AB7}
+.m.names .winner {color: #3F51B5}
+.n.names .winner {color: #2196F3}
+.o.names .winner {color: #03A9F4}
+.p.names .winner {color: #00BCD4}
 
 button {
 	font-size: 3.5em;
