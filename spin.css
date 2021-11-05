@@ -125,6 +125,7 @@ button:hover {opacity: 0.9}
 	font-size: 5rem;
 	cursor: pointer;
 	transition: opacity 0.6s ease-in-out;
+	display: flex;
 	position: fixed;
 	bottom: 1em;
 	right: 1em;
@@ -153,6 +154,7 @@ button:hover {opacity: 0.9}
 }
 
 .options .edit {margin-right: 2.5rem}
+.options .mode {font-size: 0.6em}
 
 @keyframes spin {
 	0% {transform: translate(-50%, -50%) rotate(0deg)}
