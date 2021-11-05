@@ -53,7 +53,7 @@ span {
 	will-change: filter;
 	cursor: pointer;
 	transition: background 0.6s ease-in-out;
-	transform: translate(-50%, 0);
+	transform: translateX(-50%);
 	position: absolute;
 	left: 50%;
 	bottom: 100%;
@@ -76,7 +76,11 @@ span {
 .o span {background: #FF9800}
 .p span {background: #FF5722}
 
-.names span {background: none}
+.names span {
+	background: none;
+	white-space: nowrap;
+	transform: translateX(-50%) rotate(-90deg);
+}
 
 div span:hover {opacity: 0.9}
 
