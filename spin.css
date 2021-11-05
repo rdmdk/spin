@@ -77,7 +77,7 @@ span {
 .p span {background: #FF5722}
 
 .names span {
-	background: none;
+	background: none !important;
 	white-space: nowrap;
 	transform: translateX(-50%) rotate(-90deg);
 }
