@@ -143,6 +143,9 @@ button:hover {opacity: 0.9}
 button span {
 	display: inline-block;
 	transform: rotate(-4deg);
+	position: static;
+	width: auto;
+	height: auto;
 }
 
 .marker {
