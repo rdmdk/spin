@@ -1,6 +1,7 @@
 var main = document.querySelector('main');
 var section = document.querySelector('section');
 var button = document.querySelector('button');
+var button_span = button.querySelector('span');
 var edit = document.querySelector('.edit');
 var mode = document.querySelector('.mode');
 var colors = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'];
@@ -68,6 +69,7 @@ function shifting(a) {
 
 function go() {
 	if (!section.classList.contains('spin')) {
+		button_span.innerText = '';
 		if (section.querySelector('.winner')) section.querySelector('.winner').classList.remove('winner');
 		section.classList.add('spin');
 		button.classList.add('marker');
@@ -83,6 +85,7 @@ function go() {
 		setTimeout(() => {
 			section.querySelector('div span').className = 'winner';
 			section.classList.remove('spin');
+			button_span.innerText = section.querySelector('div span').innerText;
 			setTimeout(() => button.classList.remove('marker'), 2e3);
 		}, 15e3);
 	} else return false;
