@@ -141,11 +141,11 @@ button {
 button:hover {opacity: 0.9}
 
 button span {
-	display: inline-block;
-	transform: rotate(-4deg);
-	position: static;
+	font: 1em/1 'courier new', monospace;
 	width: auto;
 	height: auto;
+	transform: rotate(-4deg);
+	position: static;
 }
 
 .marker {
