@@ -8,7 +8,7 @@ var colors = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', '
 var list;
 if (localStorage.mode) section.classList.add(localStorage.mode);
 
-if (window.location.hash && window.location.hash !== '#') list = window.location.hash;
+if (window.location.hash && window.location.hash !== '#') list = window.location.hash.substring(1);
 else if (localStorage.list) list = localStorage.list;
 else update();
 
