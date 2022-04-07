@@ -14,15 +14,11 @@ list = list.split(',');
 list.sort(() => Math.random() - 0.5);
 
 function spacing() {
-	var l = list.length, fs1, fs2, s;
-	if (localStorage.mode) {
-		fs1 = l <= 15 ? 9 : l <= 30 ? 10.5 : l <= 45 ? 11.5 : 12;
-		fs2 = l <= 15 ? 0.4 : l <= 30 ? 0.15 : l <= 45 ? 0.1 : l <= 60 ? 0.075 : l <= 75 ? 0.04 : 0.04;
-	} else {
-		fs1 = l <= 15 ? 9 : l <= 30 ? 10.5 : l <= 45 ? 11.5 : 12;
-		fs2 = l <= 15 ? 0.4 : l <= 30 ? 0.15 : l <= 45 ? 0.1 : l <= 60 ? 0.075 : l <= 75 ? 0.04 : 0.04;
-	}
+	var l = list.length,
+	fs1 = l <= 15 ? 9 : l <= 30 ? 10.5 : l <= 45 ? 11.5 : 12,
+	fs2 = l <= 15 ? 0.4 : l <= 30 ? 0.15 : l <= 45 ? 0.1 : l <= 60 ? 0.075 : l <= 75 ? 0.04 : 0.04,
 	s = 'main{font-size:' + fs1 + 'rem}span{font-size:' + fs2 + 'em}';
+	
 	if (document.head.querySelector('style')) document.head.querySelector('style').innerText = s;
 	else document.head.insertAdjacentHTML('beforeend', '<style>' + s + '</style>');
 }
