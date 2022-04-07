@@ -3,10 +3,8 @@ var section = document.querySelector('section');
 var button = document.querySelector('button');
 var button_span = button.querySelector('span');
 var edit = document.querySelector('.edit');
-var mode = document.querySelector('.mode');
 var colors = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'];
 var list;
-if (localStorage.mode) section.classList.add(localStorage.mode);
 
 if (window.location.hash && window.location.hash !== '#') list = decodeURI(window.location.hash.substring(1));
 else if (localStorage.list) list = localStorage.list;
@@ -104,11 +102,4 @@ edit.classList.add(colors[c]);
 edit.addEventListener('click', () => {
 	update();
 	window.location.reload();
-});
-
-mode.addEventListener('click', () => {
-	var c = 'names';
-	section.classList.toggle(c);
-	if (section.classList.contains(c)) localStorage.mode = c;
-	else localStorage.removeItem('mode');
 });
