@@ -10,6 +10,9 @@ if (window.location.hash && window.location.hash !== '#') list = update(decodeUR
 else if (localStorage.list) list = update(localStorage.list);
 else update();
 
+list = list.split(',');
+list.sort(() => Math.random() - 0.5);
+
 function spacing() {
 	var l = list.length,
 	fs1 = l <= 15 ? 9 : l <= 30 ? 10.5 : l <= 45 ? 11.5 : 12,
@@ -77,8 +80,6 @@ function go() {
 	} else return false;
 }
 
-list = list.split(',');
-list.sort(() => Math.random() - 0.5);
 spacing();
 setup();
 
