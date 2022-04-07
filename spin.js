@@ -6,8 +6,10 @@ var edit = document.querySelector('.edit');
 var colors = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'];
 var list;
 
-if (window.location.hash && window.location.hash !== '#') update(decodeURI(window.location.hash.substring(1)));
-else if (localStorage.list) update(localStorage.list);
+if (window.location.hash && window.location.hash !== '#') {
+	update(decodeURI(window.location.hash.substring(1)));
+	window.location.hash = '';
+} else if (localStorage.list) update(localStorage.list);
 else update();
 
 function spacing() {
