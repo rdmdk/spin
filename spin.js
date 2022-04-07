@@ -52,13 +52,6 @@ function setup() {
 	spacing();
 }
 
-main.addEventListener('click', e => {
-	if (e.target.tagName === 'SPAN') {
-		list.splice(list.indexOf(e.target.innerText.toLowerCase()), 1);
-		setup();
-	}
-});
-
 function shifting(a) {
 	for (let i = 0; i < a; i++) {
 		var b = list.shift();
@@ -91,6 +84,16 @@ button.addEventListener('click', () => {
 	else window.location.reload();
 });
 
+main.addEventListener('click', e => {
+	if (e.target.tagName === 'SPAN') {
+		list.splice(list.indexOf(e.target.innerText.toLowerCase()), 1);
+		setup();
+		localStorage.list = list.join();
+	}
+});
+
+edit.addEventListener('click', () => update());
+
 window.addEventListener('keyup', (e) => {
 	if ((e.which || e.keyCode) == 13 || (e.which || e.keyCode) == 32) {
 		e.preventDefault();
@@ -101,5 +104,3 @@ window.addEventListener('keyup', (e) => {
 var c = Math.floor(Math.random() * colors.length);
 section.classList.add(colors[c]);
 edit.classList.add(colors[c]);
-
-edit.addEventListener('click', () => update());
