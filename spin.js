@@ -50,13 +50,14 @@ function setup() {
 		section.insertAdjacentHTML('beforeend', '<div style="transform:translate(-50%, -50%) rotate(' + ((360 / list.length) * i).toFixed(1) + 'deg)"><span title="Take me out">' + a + '</span></div');
 	});
 	spacing();
-	section.querySelectorAll('span').forEach((s) => {
-		s.addEventListener('click', () => {
-			list.splice(list.indexOf(s.innerText.toLowerCase()), 1);
-			setup();
-		});
-	});
 }
+
+main.addEventListener('click', e => {
+	if (e.target.tagName === 'SPAN') {
+		list.splice(list.indexOf(e.target.innerText.toLowerCase()), 1);
+		setup();
+	}
+});
 
 function shifting(a) {
 	for (let i = 0; i < a; i++) {
@@ -101,7 +102,4 @@ var c = Math.floor(Math.random() * colors.length);
 section.classList.add(colors[c]);
 edit.classList.add(colors[c]);
 
-edit.addEventListener('click', () => {
-	update();
-	//window.location.reload();
-});
+edit.addEventListener('click', () => update());
