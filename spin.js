@@ -10,9 +10,6 @@ if (window.location.hash && window.location.hash !== '#') update(decodeURI(windo
 else if (localStorage.list) update(localStorage.list);
 else update();
 
-list = list.split(',');
-list.sort(() => Math.random() - 0.5);
-
 function spacing() {
 	var l = list.length,
 	fs1 = l <= 15 ? 9 : l <= 30 ? 10.5 : l <= 45 ? 11.5 : 12,
@@ -46,6 +43,7 @@ function setup() {
 	section.innerHTML = '';
 	button_span.innerText = '';
 	if (typeof list === 'string') list = list.split(',');
+	list.sort(() => Math.random() - 0.5);
 	list.forEach((a, i) => {
 		section.insertAdjacentHTML('beforeend', '<div style="transform:translate(-50%, -50%) rotate(' + ((360 / list.length) * i).toFixed(1) + 'deg)"><span title="Take me out">' + a + '</span></div');
 	});
