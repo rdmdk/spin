@@ -7,7 +7,9 @@ var mode = document.querySelector('.mode');
 var colors = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'];
 var list;
 if (localStorage.mode) section.classList.add(localStorage.mode);
-if (localStorage.list) list = localStorage.list;
+
+if (window.location.hash && window.location.hash !== '#') list = window.location.hash;
+else if (localStorage.list) list = localStorage.list;
 else update();
 
 list = list.split(',');
