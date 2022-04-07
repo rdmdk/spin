@@ -6,9 +6,11 @@ var edit = document.querySelector('.edit');
 var colors = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'];
 var list;
 
-if (window.location.hash && window.location.hash !== '#') {
-	update(decodeURI(window.location.hash.substring(1)));
-	window.location.hash = '';
+if ((window.location.hash && window.location.hash !== '#') || (window.location.search && window.location.search !== '?')) {
+	var h_s = window.location.hash || window.location.search;
+	update(decodeURI(h_s.substring(1)));
+	if (window.location.hash) window.location.hash = '';
+	if (window.location.search) window.location.search = '';
 } else if (localStorage.list) update(localStorage.list);
 else update();
 
