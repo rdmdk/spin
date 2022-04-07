@@ -144,6 +144,7 @@ button span {
 	font: 0.1em/1 'courier new', monospace;
 	width: auto;
 	height: auto;
+	padding: 1em;
 	transform: rotate(-45deg);
 	position: static;
 }
