@@ -73,14 +73,6 @@ function go() {
 		section.classList.add('spin');
 		button.classList.add('marker');
 		setTimeout(() => shifting(Math.floor(Math.random() * list.length) + 1), 3e3);
-		if (window.location.hash) {
-			setTimeout(() => {
-				let hashlist = window.location.hash.replace(/\#/gm, '').split(',');
-				section.querySelectorAll('div').forEach((d) => {
-					if (hashlist.indexOf(d.querySelector('span').innerText.toLowerCase()) > -1) d.querySelector('span').click();
-				});
-			}, 4e3);
-		}
 		setTimeout(() => {
 			section.querySelector('div span').className = 'winner';
 			section.classList.remove('spin');
