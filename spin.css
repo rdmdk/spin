@@ -145,6 +145,7 @@ button span {
 	width: auto;
 	height: auto;
 	padding: 1em;
+	pointer-events: none;
 	transform: rotate(-45deg);
 	position: static;
 }
