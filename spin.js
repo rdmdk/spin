@@ -44,7 +44,7 @@ function update(x) {
 function setup() {
 	section.innerHTML = '';
 	button_span.innerText = '';
-	if (typeof list === 'string') list = list.split(/,\s*/);
+	if (typeof list === 'string') list = list.trim().split(/,\s*/).filter(Boolean);
 	list.sort(() => Math.random() - 0.5);
 	list.forEach((a, i) => {
 		section.insertAdjacentHTML('beforeend', '<div style="transform:translate(-50%, -50%) rotate(' + ((360 / list.length) * i).toFixed(1) + 'deg)"><span title="Take me out">' + a + '</span></div');
