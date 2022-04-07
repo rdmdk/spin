@@ -6,8 +6,8 @@ var edit = document.querySelector('.edit');
 var colors = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'];
 var list;
 
-if (window.location.hash && window.location.hash !== '#') list = update(decodeURI(window.location.hash.substring(1)));
-else if (localStorage.list) list = update(localStorage.list);
+if (window.location.hash && window.location.hash !== '#') update(decodeURI(window.location.hash.substring(1)));
+else if (localStorage.list) update(localStorage.list);
 else update();
 
 list = list.split(',');
@@ -25,7 +25,7 @@ function spacing() {
 
 function update(x) {
 	var input = x ? x : window.prompt('Enter a comma-delimited list of initials', localStorage.list);
-	if (input !== null && input !== localStorage.list) {
+	if (input !== '' && input !== null) {
 		if (input.match(/^[0-9]+$/gm)) {
 			var n = parseInt(input);
 			list = '';
