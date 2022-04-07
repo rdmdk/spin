@@ -10,6 +10,7 @@ if (window.location.hash && window.location.hash !== '#') list = decodeURI(windo
 else if (localStorage.list) list = localStorage.list;
 else update();
 
+localStorage.list = list;
 list = list.split(',');
 list.sort(() => Math.random() - 0.5);
 
