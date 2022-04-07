@@ -38,6 +38,7 @@ function update(x) {
 		list = list.replace(/^\,|\,$/gm, '').replace(/\,+/gm, ',').toLowerCase();
 		localStorage.list = list;
 		spacing();
+		setup();
 	}
 }
 
@@ -101,5 +102,5 @@ edit.classList.add(colors[c]);
 
 edit.addEventListener('click', () => {
 	update();
-	window.location.reload();
+	//window.location.reload();
 });
