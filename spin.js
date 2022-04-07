@@ -6,8 +6,8 @@ var edit = document.querySelector('.edit');
 var colors = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p'];
 var list;
 
-if (window.location.hash && window.location.hash !== '#') list = decodeURI(window.location.hash.substring(1));
-else if (localStorage.list) list = localStorage.list;
+if (window.location.hash && window.location.hash !== '#') list = update(decodeURI(window.location.hash.substring(1)));
+else if (localStorage.list) list = update(localStorage.list);
 else update();
 
 localStorage.list = list;
@@ -24,8 +24,8 @@ function spacing() {
 	else document.head.insertAdjacentHTML('beforeend', '<style>' + s + '</style>');
 }
 
-function update() {
-	var input = window.prompt('Enter a comma-delimited list of initials', localStorage.list);
+function update(x) {
+	var input = x ? x : window.prompt('Enter a comma-delimited list of initials', localStorage.list);
 	if (input !== null && input !== localStorage.list) {
 		if (input.match(/^[0-9]+$/gm)) {
 			var n = parseInt(input);
