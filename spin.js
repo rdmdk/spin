@@ -59,7 +59,7 @@ function shifting(a) {
 		var b = list.shift();
 		list.push(b);
 	}
-	setup();
+	setTimeout(() => setup(), 100);
 }
 
 function go() {
