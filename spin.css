@@ -141,11 +141,10 @@ button {
 button:hover {opacity: 0.9}
 
 button span {
-	font: bold 0.1em/1 'courier new', monospace;
+	font: bold 0.3em/1 'courier new', monospace;
 	word-break: break-word;
 	width: auto;
 	height: auto;
-	padding: 1em;
 	pointer-events: none;
 	transform: rotate(-45deg);
 	position: static;
