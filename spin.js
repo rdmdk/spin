@@ -39,7 +39,7 @@ function update(x) {
 		list = list.replace(/^\,|\,$/gm, '').replace(/\,+/gm, ',').toLowerCase();
 		localStorage.list = list;
 		spacing();
-		setup();
+		setup(true);
 	}
 }
 
