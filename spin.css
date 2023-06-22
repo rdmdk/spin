@@ -84,7 +84,7 @@ span {
 }
 
 .names.spin span {
-	animation: fade 15s forwards linear;
+	animation: fade 15s forwards cubic-bezier(0.25, 0, 0.25, 1);
 }
 
 div span:hover {opacity: 0.75}
