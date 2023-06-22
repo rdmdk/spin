@@ -203,10 +203,10 @@ button span {
 }
 
 @keyframes fade {
-	0% {filter: opacity(1)}
-	40% {filter: opacity(0)}
-	60% {filter: opacity(0)}
-	100% {filter: opacity(1)}
+	0% {filter: none}
+	45% {filter: opacity(0) blur(1rem)}
+	55% {filter: opacity(0) blur(1rem)}
+	100% {filter: none}
 }
 
 @media (orientation:landscape) {
