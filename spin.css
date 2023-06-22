@@ -83,10 +83,6 @@ span {
 	transform: translateX(-50%) rotate(-90deg);
 }
 
-.names.spin span {
-	animation: fade 15s forwards cubic-bezier(0.25, 0, 0.25, 1);
-}
-
 div span:hover {opacity: 0.75}
 
 .a .winner, .a ~ button {background: #009688}
@@ -197,16 +193,9 @@ button span {
 
 @keyframes spin {
 	0% {transform: translate(-50%, -50%) rotate(0deg)}
-	25% {color: rgba(255, 255, 255, 0.25)}
+	25% {color: rgba(255, 255, 255, 0)}
 	75% {color: rgba(255, 255, 255, 1)}
 	100% {transform: translate(-50%, -50%) rotate(-1800deg)}
-}
-
-@keyframes fade {
-	0% {filter: none}
-	45% {filter: opacity(0) blur(1rem)}
-	55% {filter: opacity(0) blur(1rem)}
-	100% {filter: none}
 }
 
 @media (orientation:landscape) {
