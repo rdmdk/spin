@@ -197,6 +197,11 @@ button span {
 	100% {transform: translate(-50%, -50%) rotate(-1800deg)}
 }
 
+@keyframes blur {
+	0%, 100% {filter: blur(0)}
+	50% {filter: blur(1rem)}
+}
+
 @media (orientation:landscape) {
 	html {font-size: 1vh}
 }
