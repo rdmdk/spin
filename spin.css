@@ -173,9 +173,6 @@ button span {
 
 @keyframes spin {
 	0% {transform: translate(-50%, -50%) rotate(0deg)}
-	45% {color: #000}
-	50% {color: #fff}
-	55% {color: #000}
 	100% {transform: translate(-50%, -50%) rotate(-1800deg)}
 }
 
