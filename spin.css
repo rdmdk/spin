@@ -58,30 +58,17 @@ span {
 	bottom: 100%;
 }
 
-.a span {background: #f44336}
-.b span {background: #E91E63}
-.c span {background: #9C27B0}
-.d span {background: #673AB7}
-.e span {background: #3F51B5}
-.f span {background: #2196F3}
-.g span {background: #03A9F4}
-.h span {background: #00BCD4}
-.i span {background: #009688}
-.j span {background: #4CAF50}
-.k span {background: #8BC34A}
-.l span {background: #CDDC39}
-.m span {background: #FFEB3B}
-.n span {background: #FFC107}
-.o span {background: #FF9800}
-.p span {background: #FF5722}
-
 .names span {
-	background: none !important;
 	white-space: nowrap;
 	transform: translateX(-50%) rotate(-90deg);
 }
 
 div span:hover {opacity: 0.75}
+
+.spin span {
+	animation: blur 7.5s forwards ease-in-out;
+	animation-delay: 3.75s;
+} 
 
 .a .winner, .a ~ button {background: #009688}
 .b .winner, .b ~ button {background: #4CAF50}
@@ -191,10 +178,12 @@ button span {
 
 @keyframes spin {
 	0% {transform: translate(-50%, -50%) rotate(0deg)}
-	45% {color: #000}
-	50% {color: #fff}
-	55% {color: #000}
 	100% {transform: translate(-50%, -50%) rotate(-1800deg)}
+}
+
+@keyframes blur {
+	0%, 100% {filter: blur(1rem}
+	50% {filter: blur(1rem}
 }
 
 @media (orientation:landscape) {
