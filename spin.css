@@ -173,12 +173,9 @@ button span {
 
 @keyframes spin {
 	0% {transform: translate(-50%, -50%) rotate(0deg)}
+	50% {filter: blur(0.1rem) opacity(0.5)}
+	75% {filter: none}
 	100% {transform: translate(-50%, -50%) rotate(-1800deg)}
-}
-
-@keyframes blur {
-	0%, 100% {filter: blur(0)}
-	50% {filter: blur(1rem)}
 }
 
 @media (orientation:landscape) {
