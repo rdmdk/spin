@@ -58,25 +58,7 @@ span {
 	bottom: 100%;
 }
 
-.a span {background: #f44336}
-.b span {background: #E91E63}
-.c span {background: #9C27B0}
-.d span {background: #673AB7}
-.e span {background: #3F51B5}
-.f span {background: #2196F3}
-.g span {background: #03A9F4}
-.h span {background: #00BCD4}
-.i span {background: #009688}
-.j span {background: #4CAF50}
-.k span {background: #8BC34A}
-.l span {background: #CDDC39}
-.m span {background: #FFEB3B}
-.n span {background: #FFC107}
-.o span {background: #FF9800}
-.p span {background: #FF5722}
-
 .names span {
-	background: none !important;
 	white-space: nowrap;
 	transform: translateX(-50%) rotate(-90deg);
 }
