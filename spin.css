@@ -83,22 +83,22 @@ span {
 
 div span:hover {opacity: 0.75}
 
-.a .winner, .a ~ button {background: #009688}
-.b .winner, .b ~ button {background: #4CAF50}
-.c .winner, .c ~ button {background: #8BC34A}
-.d .winner, .d ~ button {background: #CDDC39}
-.e .winner, .e ~ button {background: #FFEB3B}
-.f .winner, .f ~ button {background: #FFC107}
-.g .winner, .g ~ button {background: #FF9800}
-.h .winner, .h ~ button {background: #FF5722}
-.i .winner, .i ~ button {background: #f44336}
-.j .winner, .j ~ button {background: #E91E63}
-.k .winner, .k ~ button {background: #9C27B0}
-.l .winner, .l ~ button {background: #673AB7}
-.m .winner, .m ~ button {background: #3F51B5}
-.n .winner, .n ~ button {background: #2196F3}
-.o .winner, .o ~ button {background: #03A9F4}
-.p .winner, .p ~ button {background: #00BCD4}
+.a ~ button {background: #009688}
+.b ~ button {background: #4CAF50}
+.c ~ button {background: #8BC34A}
+.d ~ button {background: #CDDC39}
+.e ~ button {background: #FFEB3B}
+.f ~ button {background: #FFC107}
+.g ~ button {background: #FF9800}
+.h ~ button {background: #FF5722}
+.i ~ button {background: #f44336}
+.j ~ button {background: #E91E63}
+.k ~ button {background: #9C27B0}
+.l ~ button {background: #673AB7}
+.m ~ button {background: #3F51B5}
+.n ~ button {background: #2196F3}
+.o ~ button {background: #03A9F4}
+.p ~ button {background: #00BCD4}
 
 .a.names .winner {color: #009688}
 .b.names .winner {color: #4CAF50}
