@@ -34,7 +34,7 @@ function update(x) {
 				list += i + ',';
 			}
 		} else if (input === 'abc') list = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z';
-		else if (input === 'ci') list = 'ab,hy,ja,li,mf,mo,on,pl,pp,pw,rd,rt,vz,wg';
+		else if (input === 'ci') list = 'ab,hy,ja,li,mf,mo,on,pl,pw,rd,rt,vz,wg';
 		else list = input;
 		list = list.replace(/^\,|\,$/gm, '').replace(/\,+/gm, ',').toLowerCase();
 		localStorage.list = list;
