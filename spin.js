@@ -34,7 +34,12 @@ function update(x) {
 				list += i + ',';
 			}
 		} else if (input === 'abc') list = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z';
-		else if (input === 'ci') list = 'ab,dd,hy,ja,jw,li,mf,mo,on,ot,pl,pw,rd,rt,vz,wg';
+		else if (/ci[_ab]*$/gm.test(input)) {
+			const ci_a = 'ja,mf,ot,pl,pw,rh';
+			const ci_b = 'dd,hy,jw,mo,rt,wg';
+			const ci_c = 'ab,li,on,rd,vz';
+			list = (a === 'ci_a' ? ci_a : a === 'ci_b' ? ci_b : ci_a + ',' + ci_b) + ',' + ci_c;
+		}
 		else list = input;
 		list = list.replace(/^\,|\,$/gm, '').replace(/\,+/gm, ',').toLowerCase();
 		localStorage.list = list;
