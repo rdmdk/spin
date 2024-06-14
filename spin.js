@@ -38,7 +38,7 @@ function update(x) {
 			const ci_a = 'ja,mf,ot,pl,pw,rh';
 			const ci_b = 'dd,hy,jw,mo,rt,wg';
 			const ci_c = 'ab,li,on,rd,vz';
-			list = (a === 'ci_a' ? ci_a : a === 'ci_b' ? ci_b : ci_a + ',' + ci_b) + ',' + ci_c;
+			list = (input === 'ci_a' ? ci_a : input === 'ci_b' ? ci_b : ci_a + ',' + ci_b) + ',' + ci_c;
 		}
 		else list = input;
 		list = list.replace(/^\,|\,$/gm, '').replace(/\,+/gm, ',').toLowerCase();
