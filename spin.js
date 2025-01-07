@@ -35,9 +35,9 @@ function update(x) {
 			}
 		} else if (input === 'abc') list = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z';
 		else if (/ci[_ab]*$/gm.test(input)) {
-			const ci_a = 'ht,ls,mf,ot,pl,pw,rh';
+			const ci_a = 'ht,ls,mf,ot,pl,pw,rh,so';
 			const ci_b = 'dd,fg,jw,rt,sm,wg';
-			const ci_c = 'ab,cb,li,on,rd,vz';
+			const ci_c = 'ab,on,rd,vz';
 			list = (input === 'ci_a' ? ci_a : input === 'ci_b' ? ci_b : ci_a + ',' + ci_b) + ',' + ci_c;
 		}
 		else list = input;
