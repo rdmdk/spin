@@ -37,7 +37,7 @@ function update(x) {
 		else if (/ci[_ab]*$/gm.test(input)) {
 			const ci_a = 'gr,mf,mq,pl,pw,so,st,ht';
 			const ci_b = 'dd,fg,ho,wg,sm';
-			const ci_c = 'ab,ms,on,rd';
+			const ci_c = 'ab,on,rd';
 			list = (input === 'ci_a' ? ci_a : input === 'ci_b' ? ci_b : ci_a + ',' + ci_b) + ',' + ci_c;
 		}
 		else list = input;
