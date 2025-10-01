@@ -36,7 +36,7 @@ function update(x) {
 		} else if (input === 'abc') list = 'a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z';
 		else if (/ci[_ab]*$/gm.test(input)) {
 			const ci_a = 'gr,mf,mq,pl,pw,so,st,ht';
-			const ci_b = 'dd,fg,ho,wg,sm';
+			const ci_b = 'ar,dd,fg,ho,wg,sh,sm';
 			const ci_c = 'ab,on,rd';
 			list = (input === 'ci_a' ? ci_a : input === 'ci_b' ? ci_b : ci_a + ',' + ci_b) + ',' + ci_c;
 		}
